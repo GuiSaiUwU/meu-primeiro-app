@@ -18,4 +18,8 @@ export class User {
     return this.idade >= 35;
   }
 
+  getIdade() {
+    return this.idade;
+  }
+
 }
