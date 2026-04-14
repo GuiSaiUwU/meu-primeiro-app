@@ -5,7 +5,7 @@
 @if (tarefas.length > 0) {
     <p>Tarefas:</p>
     @for (item of tarefas; track item) {
-        <p>{{ item }}</p>
+        <p>{{ item.id }} {{ item.descricao }}</p>
     }
 } @else {
     <p>Tarefas vazias ;-; </p>
