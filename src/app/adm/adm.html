@@ -1,5 +1,5 @@
 <input [(ngModel)]="tarefa">
-<button (click)="adicionarTarefas()">add tarefa</button>
+<button (click)="adicionarTarefas()" [disabled]="disabledButton">add tarefa</button>
 
 
 @if (tarefas.length > 0) {

@@ -10,11 +10,16 @@ import { FormsModule, NgModel } from '@angular/forms';
 export class Adm {
   tarefa: string = '';
   tarefas: string[] = [];
+  disabledButton: boolean = false;
 
   adicionarTarefas() {
     if (this.tarefa.trim() != '') {
       this.tarefas.push(this.tarefa);
       this.tarefa = '';
+    }
+
+    if (this.tarefas.length > 4) {
+      this.disabledButton = true;
     }
   }
 }
