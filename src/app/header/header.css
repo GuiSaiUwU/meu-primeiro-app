@@ -1,0 +1,10 @@
+.containerBotao {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    background-color:chocolate;
+    background: chocolate;
+    color: chocolate;
+}
