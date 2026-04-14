@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -6,4 +6,16 @@ import { Component } from '@angular/core';
   templateUrl: './user.html',
   styleUrl: './user.css',
 })
-export class User {}
+export class User {
+  nome = signal('Guilherme');
+  idade: number = 20;
+
+  incrementarIdade() {
+    this.idade++;
+  }
+
+  desativarBotao() {
+    return this.idade >= 35;
+  }
+
+}
